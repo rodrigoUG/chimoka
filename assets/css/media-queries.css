@@ -2,9 +2,7 @@
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for larger than 575px screen
- */
+
 
 @media (min-width: 575px) {
 
@@ -232,9 +230,6 @@
 
 
 
-  /**
- * responsive for larger than 768px screen
- */
 
   @media (min-width: 768px) {
 
@@ -356,10 +351,6 @@
 
 
 
-
-  /**
- * responsive for larger than 992px screen
- */
 
   @media (min-width: 992px) {
 
@@ -547,26 +538,11 @@
   }
 
 
-  /* Eliminar o comentar la siguiente regla para evitar sobrescribir el grid de 4 columnas en desktop:
-@media (min-width: 480px) {
-  .grid-list-ca {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-  }
-
-  .product-card .card-banner img {
-    width: 100%;
-}
-}
-*/
 
 
 
 
 
-  /**
- * responsive for larger than 1200px screen
- */
 
   @media (min-width: 1200px) {
 
@@ -770,10 +746,6 @@
 
 
 
-
-  /**
- * responsive for larger than 1400px screen
- */
 
   @media (min-width: 1400px) {
 
