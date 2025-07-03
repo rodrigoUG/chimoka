@@ -12,7 +12,7 @@
   gap: 20px;
 }
 
-.hover\:card .card-banner { background-color: var(--gold-crayola); }
+.hover\:card .card-banner { background-color: var(--primario); }
 
 .hover\:card .card-banner .img-cover { transition: var(--transition-2); }
 
@@ -28,10 +28,10 @@
 
 .menu-card .card-title { transition: var(--transition-1); }
 
-.menu-card .card-title:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.menu-card .card-title:is(:hover, :focus-visible) { color: var(--primario); }
 
 .menu-card .badge {
-  background-color: var(--gold-crayola);
+  background-color: var(--primario);
   color: var(--eerie-black-1);
   font-family: var(--fontFamily-forum);
   max-width: max-content;
@@ -42,7 +42,7 @@
 }
 
 .menu-card .span {
-  color: var(--gold-crayola);
+  color: var(--primario);
   margin-block: 10px;
 }
 
@@ -53,7 +53,7 @@
 
 .menu-text .span {
   display: inline-block;
-  color: var(--gold-crayola);
+  color: var(--primario);
 }
 
 .menu .btn {
@@ -103,7 +103,7 @@
   color: var(--davys-grey);
 }
 
-.special-dish-content .span { color: var(--gold-crayola); }
+.special-dish-content .span { color: var(--primario); }
 
 .special-dish .btn { margin-inline: auto; }
 

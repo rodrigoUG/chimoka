@@ -8,7 +8,7 @@
 }
 
 .filter-btn.active {
-    background-color: var(--gold-crayola);
+    background-color: var(--primario);
     color: #1e1e1e;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .product-card:is(:hover, :focus-within) {
-    outline-color: var(--gold-crayola);
+    outline-color: var(--primario);
 }
 
 .product-card .card-banner {
@@ -163,11 +163,11 @@ ion-icon {
 }
 
 .product-card .price-wrapper .del {
-    color: var(--gold-crayola);
+    color: var(--primario);
 }
 
 .product-card .price-wrapper .price {
-    color: var(--gold-crayola);
+    color: var(--primario);
     margin-inline-start: 5px;
 }
 

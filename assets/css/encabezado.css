@@ -85,7 +85,7 @@
 
 .navbar .close-btn ion-icon { --ionicon-stroke-width: 40px; }
 
-.navbar .close-btn:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.navbar .close-btn:is(:hover, :focus-visible) { color: var(--primario); }
 
 .navbar .logo {
   max-width: max-content;
@@ -113,7 +113,7 @@
 .navbar-link .span { transition: var(--transition-1); }
 
 .navbar-link:is(:hover, :focus-visible, .active) .span {
-  color: var(--gold-crayola);
+  color: var(--primario);
   transform: translateX(20px);
 }
 
@@ -136,7 +136,7 @@
 
 .sidebar-link { transition: var(--transition-1); }
 
-.sidebar-link:is(:hover, :focus-visible) { color: var(--gold-crayola); }
+.sidebar-link:is(:hover, :focus-visible) { color: var(--primario); }
 
 .navbar .text-center .separator {
   margin-block: 30px;

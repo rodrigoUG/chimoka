@@ -14,7 +14,7 @@
 
 .hero .slider-item {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
@@ -44,6 +44,10 @@
   z-index: -1;
 }
 
+.slider-bg img{
+  opacity: 0.7;
+}
+
 .hero .slider-item.active .slider-bg {
   animation: smoothScale 7s linear forwards;
 }
@@ -64,7 +68,7 @@
   bottom: 15px;
   right: 15px;
   z-index: 2;
-  background-color: var(--gold-crayola);
+  background-color: var(--primario);
   width: 110px;
   height: 110px;
   padding: 12px;
@@ -86,7 +90,7 @@
 
 .hero-btn::after {
   inset: 0;
-  border: 1px solid var(--gold-crayola);
+  border: 1px solid var(--primario);
   animation: rotate360 15s linear infinite;
 }
 
@@ -115,6 +119,9 @@
 
 .hero .slider-item.active .hero-title { animation-delay: 1000ms; }
 
-.hero .slider-item.active .hero-text { animation-delay: 1.5s; }
+.hero .slider-item.active .hero-text { 
+  animation-delay: 1.5s;
+  padding: 0rem 10rem;
+}
 
 .hero .slider-item.active .btn { animation-delay: 2s; }

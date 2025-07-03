@@ -130,7 +130,7 @@ let autoSlideInterval;
 
 const autoSlide = function () {
   autoSlideInterval = setInterval(function () {
-    //slideNext();
+    slideNext();
   }, 7000);
 }
 
