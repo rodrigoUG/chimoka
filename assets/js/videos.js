@@ -5,12 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   eventVideos.forEach((video, i) => {
     if (i === 0) {
-      video.muted = true;
       video.currentTime = 0;
       video.play();
       video.style.opacity = '1';
     } else {
-      video.muted = true;
       video.pause();
       video.currentTime = 0;
       video.style.opacity = '0.5';
@@ -22,9 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
     video.addEventListener('click', function () {
       eventVideos.forEach((v, i) => {
         if (i === idx) {
-          v.muted = false;
-          v.play();
-          v.style.opacity = '1';
+          if (v.muted){
+            v.play();
+            v.style.opacity = '1';
+          }else{
+            v.pause()
+            v.style.opacity = '0.5';
+          }
+          v.muted = !v.muted;
+        
         } else {
           v.muted = true;
           v.pause();
