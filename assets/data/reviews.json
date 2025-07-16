@@ -1,0 +1,38 @@
+[
+  {
+    "texto": "¡Buena ambientación del local. cuenta con libros para una libre lectura 📚...",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjU_WHEdZZwrsGu7Ec8xwc0kDq0Okxmh4MhU4Zm3ycWLaPLZ2y8s=w90-h90-p-rp-mo-ba2-br100",
+    "autor": "Noelia.",
+    "rol": "Cliente frecuente"
+  },
+  {
+    "texto": "Excelente atención y variedad de bebidas. ¡Recomendado!",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjVHGhhVg4TrUiPW9q3ppsGPPhrH9OCT-1jq1xfz1D21cNowgCKjcQ=w90-h90-p-rp-mo-ba5-br100",
+    "autor": "Edu Soto.",
+    "rol": "Amante del café"
+  },
+  {
+    "texto": "Chimoka, se ha vuelto uno de los lugares más cálidos y bonitos de todo Zarate...",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjWE47gvyFbxr2EReu6Yid7GOdld9zM8G5hvMT3QlC8MgiiUj51tXA=w90-h90-p-rp-mo-ba4-br100",
+    "autor": "Camila Yrazábal.",
+    "rol": "Dulcera"
+  },
+  {
+    "texto": "El pastel de pera 🍐 buenazo el cheesecake de maracuya si estaba muy dulce. Bonito lugar 🔥.",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjX_gsW7JILiAc-oXcZCpmhW43OM38dsQUUqTghu7HRc0esCgfJU-g=w90-h90-p-rp-mo-ba3-br100",
+    "autor": "Fernando Huamaní.",
+    "rol": "Freelancer"
+  },
+  {
+    "texto": "Un lugar tranquilo y acogedor. Todo delicioso 😋😋😋…!",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjUyV58DaMipsNsdq_G70ImusTj6UGdNds_sQIFoyJ5Vy601wgpO=w90-h90-p-rp-mo-br100",
+    "autor": "Luz Marina Quispe .",
+    "rol": "Vegana"
+  },
+  {
+    "texto": "Los conocí por el Pasaporte del Café Peruano... !",
+    "img": "https://lh3.googleusercontent.com/a-/ALV-UjUMYJMetyiGYT--BSH4bx8OQZj0j-L9oqsUUIa4lsF6W1XyWKVr=w45-h45-p-rp-mo-ba3-br100",
+    "autor": "Paola Jara.",
+    "rol": "Cliente habitual"
+  }
+] 

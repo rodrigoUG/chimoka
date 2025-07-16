@@ -338,7 +338,7 @@
               <div class="event-card has-before hover:shine">
 
                 <div class="card-banner img-holder" style="--width: 350; --height: 450;">
-                  <video width="350" height="450" autoplay muted loop playsinline
+                  <video width="350" height="450" muted loop playsinline
                     style="object-fit: cover; width: 100%; height: 100%; border-radius: inherit;">
                     <source src="./assets/videos/tk1.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de video.
@@ -386,7 +386,7 @@
                     <source src="./assets/videos/tk3.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de video.
                   </video>
-                  <time class="publish-date label-2" datetime="2024-01-03">CA</time>
+                  <time class="publish-date label-2" datetime="2024-01-03">kA</time>
                 </div>
 
                 <div class="card-content">
@@ -595,6 +595,18 @@
 
 
 
+  <!-- Sección de Reseñas de Clientes -->
+  <section class="section reviews-cascada text-center" id="reviews">
+    <div class="container-reviews">
+      <h2 class="headline-1 section-title">Lo que dicen nuestros clientes</h2>
+      <div class="reviews-grid" id="reviews-grid">
+        <!-- Las columnas se llenarán por JS -->
+      </div>
+    </div>
+  </section>
+  <!-- Fin sección de Reseñas de Clientes -->
+
+
   <footer class="footer section has-bg-image text-center"
     style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
@@ -682,9 +694,82 @@
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/menu.js"></script>
   <script src="./assets/js/videos.js"></script>
+  <script>
+    document.querySelectorAll('.event-card video').forEach(function(video) {
+      video.addEventListener('click', function() {
+        if (video.paused) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      });
+    });
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  <!-- Script para animación de reseñas al hacer scroll -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const cards = document.querySelectorAll('.review-card');
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry, idx) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('visible-review');
+            }, idx * 150);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+  </script>
+ 
+  <script>
+  async function cargarResenas() {
+    const res = await fetch('./assets/data/reviews.json');
+    const data = await res.json();
+
+    // Divide las reseñas en 3 columnas
+    const columnas = [[], [], []];
+    data.forEach((review, i) => {
+      columnas[i % 3].push(review);
+    });
+
+    // Duplica el contenido para el bucle infinito
+    columnas.forEach((col, idx) => columnas[idx] = col.concat(col));
+
+    // Genera el HTML
+    const grid = document.getElementById('reviews-grid');
+    grid.innerHTML = '';
+    columnas.forEach((col, idx) => {
+      const dir = (idx === 1) ? 'down' : 'up';
+      let html = `<div class="reviews-column ${dir}">`;
+      col.forEach(r => {
+        html += `
+          <div class="review-card">
+            <p class="review-text">${r.texto}</p>
+            <div class="review-user">
+              <img src="${r.img}" alt="${r.autor}" class="review-avatar">
+              <div>
+                <span class="review-author">${r.autor}</span>
+                <span class="review-role">${r.rol}</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      html += '</div>';
+      grid.innerHTML += html;
+    });
+  }
+  cargarResenas();
+  </script>
  
 </body>
 
