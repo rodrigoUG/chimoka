@@ -50,7 +50,7 @@
       ],
       "Bebidas Frías": [
         {
-          "nombre": "Cold Brew de Frutos Rojos",
+          "nombre": "Cold Brew Frutos Rojos",
           "precio": 13.00,
           "descripcion": "Café frío infusionado con frutos rojos, refrescante y afrutado."
         },
@@ -132,7 +132,7 @@
       ],
       "Postres": [
         {
-          "nombre": "Torta de Zanahoria",
+          "nombre": "Torta Zanahoria",
           "precio": 11.00,
           "descripcion": "Bizcocho húmedo de zanahoria con frosting de queso crema."
         },
@@ -142,7 +142,7 @@
           "descripcion": "Postre tradicional peruano tipo flan."
         },
         {
-          "nombre": "Torta de Pera",
+          "nombre": "Torta Pera",
           "precio": 11.00,
           "descripcion": "Bizcocho suave con peras frescas."
         },
@@ -157,7 +157,7 @@
           "descripcion": "Waffle con toppings especiales y salsa de chocolate."
         },
         {
-          "nombre": "Tostadas de Palta y Huevo",
+          "nombre": "Tostadas Palta y Huevo",
           "precio": 10.00,
           "descripcion": "Tostadas de pan con palta y huevo cocido."
         },
@@ -169,7 +169,7 @@
       ],
       "Fondos": [
         {
-          "nombre": "Apanado de Pollo",
+          "nombre": "Apanado Pollo",
           "precio": 16.00,
           "descripcion": "Filete de pollo empanizado acompañado de papas."
         },
@@ -184,7 +184,7 @@
           "descripcion": "Pasta fetuccine con salsa Alfredo cremosa."
         },
         {
-          "nombre": "Fetuccine Huancaína con Lomo",
+          "nombre": "Fetuccine Huancaína Lomo",
           "precio": 17.00,
           "descripcion": "Fetuccine con salsa huancaína y lomo saltado."
         },
@@ -211,7 +211,7 @@
           "descripcion": "Avena cocida con leche, frutas y semillas."
         },
         {
-          "nombre": "Ensalada de Frutas",
+          "nombre": "Ensalada Frutas",
           "precio": 10.00,
           "descripcion": "Variedad de frutas frescas de temporada."
         },
