@@ -26,7 +26,7 @@
         <figure class="card-banner">
           <img src="${path}" width="189" height="189" loading="lazy" alt="${producto.nombre}">
           <div class="btn-wrapper">
-            <button class="product-btn" aria-label="Pedir">
+            <button class="product-btn" aria-label="Pedir" onclick="window.open('https://wa.me/51907298740?text=Hola%2C%20quiero%20pedir%3A%20${producto.nombre}', '_blank')">
               <ion-icon name="heart-outline" role="img" class="md hydrated" aria-label="heart outline"></ion-icon>
               <div class="tooltip">Pedir</div>
             </button>
